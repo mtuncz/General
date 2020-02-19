@@ -1,0 +1,19 @@
+/* reading with bufferedReader and also scanner 
+console reading */ 
+
+import java.io.*; 
+import java.util.*; 
+
+public class Exercise {
+	public static void main(String[] args){
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in)); 
+		String name = reader.readLine(); 
+		System.out.println("Your name is :" + name); 
+		reader.close(); 
+		
+		Scanner sc = new Scanner(System.in); 
+		name = sc.nextLine(); 
+		System.out.println("Your name is :" + name); 
+		sc.close(); 
+	}
+}
