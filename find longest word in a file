@@ -1,0 +1,25 @@
+/*
+read a file and get the longest word
+*/ 
+
+public class Example {
+	public static void main(String[] args){
+	
+	
+	}
+	
+	public static String longestWord() throws IOException {
+		String fileName = "filename"; 
+		String longestWord = "";
+		String current = ""; 
+		
+		Scanner sc = new Scanner(new File(fileName)): 
+		while(sc.hasNext()){
+			current = sc.next(); 
+			if(current.length() > longestWord.length()){
+				longestWord = current; 
+			} 
+		}
+		
+		return longestWord; 
+	}
